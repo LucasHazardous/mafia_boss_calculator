@@ -1,3 +1,8 @@
+* {
+  user-select: none;
+  -webkit-user-select: none;
+}
+
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   font-size: 16px;
@@ -15,38 +20,11 @@
 }
 
 .container {
-  margin: 0;
-  padding-top: 10vh;
+  margin: 0.2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: 0.75s;
-}
-
-.logo.tauri:hover {
-  filter: drop-shadow(0 0 2em #24c8db);
-}
-
-.row {
-  display: flex;
-  justify-content: center;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-
-a:hover {
-  color: #535bf2;
 }
 
 h1 {
@@ -84,8 +62,16 @@ button {
   outline: none;
 }
 
-#greet-input {
-  margin-right: 5px;
+#equation-input {
+  padding: 1rem;
+  margin: 1rem;
+}
+
+#button-holder {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
+  gap: 0.7rem;
 }
 
 @media (prefers-color-scheme: dark) {
