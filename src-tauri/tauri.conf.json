@@ -36,9 +36,9 @@
     "windows": [
       {
         "fullscreen": false,
-        "resizable": true,
+        "resizable": false,
         "title": "mafia_boss_calculator",
-        "width": 800,
+        "width": 500,
         "height": 600
       }
     ]
